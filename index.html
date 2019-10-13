@@ -31,30 +31,42 @@
         <div id="time-block">
             <div class="row">
                 <div class="hour" id="hr"></div>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <textarea name="timeText" id="text" cols="160" rows="2"></textarea>
-                <div class="saveBtn">
-                </div>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
+                <textarea name="timeText" id="text" cols="138" rows="3"></textarea>
+                <button id="lock-image"><img src="lock.jpg" width="130" height="50"></button>
             </div>
         </div>
-        <script>
-            var date = new Date();
-            document.getElementById("lead").innerHTML = date;
-            var calendar = document.getElementById("calendar");
-            $(document).ready(function () {
+    </div>
+    <script>
+        var date = new Date();
+        document.getElementById("lead").innerHTML = date;
+        var calendar = document.getElementById("calendar");
+        $(document).ready(function () {
 
-            });
+        });
 
 
 
-        </script>
+    </script>
+
+    <!-- Need to put in the times on the left (9-5) buttons on the right will store time and
+        user input in "local storage" and allowing the text to presist when the application is refreshed;
+    color code whether the time slot is in the past (gray),present (pink?), future (blue) *need to use the moment.js function/library-->
     </div>
     </div>
 
