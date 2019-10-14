@@ -31,8 +31,8 @@
         <div id="time-block">
             <div class="row">
                 <div class="hour" id="hr"></div>
-                <textarea name="timeText" id="text09" cols="138" rows="3"></textarea>
-                <button id="save-image09"><img src="save.png" width="130" height="50"></button>
+                <textarea name="timeText" id="text9" cols="138" rows="3"></textarea>
+                <button id="save-image9"><img src="save.png" width="130" height="50"></button>
                 <textarea name="timeText" id="text10" cols="138" rows="3"></textarea>
                 <button id="save-image10"><img src="save.png" width="130" height="50"></button>
                 <textarea name="timeText" id="text11" cols="138" rows="3"></textarea>
@@ -59,20 +59,19 @@
         $(document).ready(function () {
         });
 
-        document.getElementById("save-image09").addEventListener("click", function () {
-            localStorage.setItem("0900", document.getElementById("text09").value);
-        });
-        document.getElementById("save-image10").addEventListener("click", function () {
-            localStorage.setItem("1000", document.getElementById("text10").value);
-        });
-        document.getElementById("save-image11").addEventListener("click", function () {
-            localStorage.setItem("1100", document.getElementById("text11").value);
-        });
+        function setUpHour(i) {
+            var text = "text" + i;
+            var img = "save-image" + i;
+            var time = "time" + i;
+            document.getElementById(text).value = localStorage.getItem(time);
+            document.getElementById(img).addEventListener("click", function () {
+                localStorage.setItem(time, document.getElementById(text).value);
 
-        var textarr = ["text09", "text10", "text11", "text12", "text13", "text14", "text15", "text16", "text17"];
-        var timearr = ["0900", "1000", "1100", "1200", "1300", "1400", "1500", "1600", "1700"];
-        for (let i = 0; i < textarr.length; i++) {
-            document.getElementById(textarr[i]).value = localStorage.getItem(timearr[i]);
+            });
+
+        }
+        for (let i = 9; i <= 17; i++) {
+            setUpHour(i);
         }
     </script>
 
