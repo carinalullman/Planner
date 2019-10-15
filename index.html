@@ -31,24 +31,34 @@
         <div id="time-block">
             <div class="row">
                 <div class="hour" id="hr"></div>
-                <textarea name="timeText" id="text9" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text9" cols="125" rows="3"></textarea>
                 <button id="save-image9"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text10" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text10" cols="125" rows="3"></textarea>
                 <button id="save-image10"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text11" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text11" cols="125" rows="3"></textarea>
                 <button id="save-image11"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text12" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text12" cols="125" rows="3"></textarea>
                 <button id="save-image12"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text13" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text13" cols="125" rows="3"></textarea>
                 <button id="save-image13"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text14" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text14" cols="125" rows="3"></textarea>
                 <button id="save-image14"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text15" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text15" cols="125" rows="3"></textarea>
                 <button id="save-image15"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text16" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text16" cols="125" rows="3"></textarea>
                 <button id="save-image16"><img src="save.png" width="130" height="50"></button>
-                <textarea name="timeText" id="text17" cols="138" rows="3"></textarea>
+                <textarea id="timeclock" cols ="10" rows="2"></textarea>
+                <textarea name="timeText" id="text17" cols="125" rows="3"></textarea>
                 <button id="save-image17"><img src="save.png" width="130" height="50"></button>
+                
             </div>
         </div>
     </div>
@@ -73,6 +83,8 @@
         for (let i = 9; i <= 17; i++) {
             setUpHour(i);
         }
+        
+        moment().format();
     </script>
 
     <!-- Need to put in the times on the left (9-5) buttons on the right will store time and
